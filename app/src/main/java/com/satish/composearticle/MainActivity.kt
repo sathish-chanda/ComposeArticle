@@ -31,14 +31,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeArticleTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ComposeArticle(
-                        stringResource(id = R.string.article_heading),
-                        stringResource(id = R.string.article_subheading),
-                        stringResource(id = R.string.article_information),
-                        modifier = Modifier.padding(innerPadding)
-                    )
-//                    TaskManager(taskStatus = stringResource(id = R.string.task_status), compliment = stringResource(
-//                        id = R.string.task_compliment))
+//                    ComposeArticle(
+//                        stringResource(id = R.string.article_heading),
+//                        stringResource(id = R.string.article_subheading),
+//                        stringResource(id = R.string.article_information),
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
+                    TaskManager(taskStatus = stringResource(id = R.string.task_status), compliment = stringResource(
+                        id = R.string.task_compliment))
                 }
             }
         }
